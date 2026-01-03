@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Device Lock</string>
+    <string name="title_activity_main">Device Lock</string>
+    <string name="package_name">com.devicelock.app</string>
+    <string name="custom_url_scheme">com.devicelock.app</string>
+</resources>

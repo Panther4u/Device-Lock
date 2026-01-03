@@ -1,0 +1,204 @@
+{
+    "customers": [
+        {
+            "id": "CUS001",
+            "name": "Rajesh Kumar",
+            "phone": "+91 98765 43210",
+            "aadhaar": "XXXX XXXX 4532",
+            "address": "45, MG Road, Bengaluru, Karnataka 560001",
+            "createdAt": "2024-01-15T00:00:00.000Z"
+        },
+        {
+            "id": "CUS002",
+            "name": "Priya Sharma",
+            "phone": "+91 87654 32109",
+            "aadhaar": "XXXX XXXX 7821",
+            "address": "12, Linking Road, Mumbai, Maharashtra 400050",
+            "createdAt": "2024-02-20T00:00:00.000Z"
+        },
+        {
+            "id": "CUS003",
+            "name": "Amit Patel",
+            "phone": "+91 76543 21098",
+            "aadhaar": "XXXX XXXX 9156",
+            "address": "78, CG Road, Ahmedabad, Gujarat 380009",
+            "createdAt": "2024-03-10T00:00:00.000Z"
+        },
+        {
+            "id": "CUS004",
+            "name": "Sneha Reddy",
+            "phone": "+91 65432 10987",
+            "aadhaar": "XXXX XXXX 3467",
+            "address": "23, Jubilee Hills, Hyderabad, Telangana 500033",
+            "createdAt": "2024-03-25T00:00:00.000Z"
+        },
+        {
+            "id": "CUS005",
+            "name": "Mohammed Rizwan",
+            "phone": "+91 54321 09876",
+            "aadhaar": "XXXX XXXX 5689",
+            "address": "56, Anna Nagar, Chennai, Tamil Nadu 600040",
+            "createdAt": "2024-04-05T00:00:00.000Z"
+        }
+    ],
+    "devices": [
+        {
+            "id": "DEV001",
+            "customerId": "CUS001",
+            "deviceName": "Samsung Galaxy S24",
+            "modelName": "SM-S921B",
+            "imei1": "352345678901234",
+            "imei2": "352345678901235",
+            "status": "unlocked",
+            "lastSyncAt": "2026-01-03T10:00:00.000Z",
+            "registeredAt": "2024-01-15T00:00:00.000Z"
+        },
+        {
+            "id": "DEV002",
+            "customerId": "CUS002",
+            "deviceName": "iPhone 15 Pro",
+            "modelName": "A2848",
+            "imei1": "353456789012345",
+            "imei2": "353456789012346",
+            "status": "locked",
+            "lastSyncAt": "2026-01-02T10:00:00.000Z",
+            "registeredAt": "2024-02-20T00:00:00.000Z"
+        },
+        {
+            "id": "DEV003",
+            "customerId": "CUS003",
+            "deviceName": "OnePlus 12",
+            "modelName": "CPH2573",
+            "imei1": "354567890123456",
+            "imei2": "354567890123457",
+            "status": "unlocked",
+            "lastSyncAt": "2026-01-03T10:00:00.000Z",
+            "registeredAt": "2024-03-10T00:00:00.000Z"
+        },
+        {
+            "id": "DEV004",
+            "customerId": "CUS004",
+            "deviceName": "Xiaomi 14",
+            "modelName": "23127PN0CC",
+            "imei1": "355678901234567",
+            "imei2": "355678901234568",
+            "status": "pending",
+            "lastSyncAt": "2026-01-01T10:00:00.000Z",
+            "registeredAt": "2024-03-25T00:00:00.000Z"
+        },
+        {
+            "id": "DEV005",
+            "customerId": "CUS005",
+            "deviceName": "Vivo X100",
+            "modelName": "V2310",
+            "imei1": "356789012345678",
+            "imei2": "356789012345679",
+            "status": "locked",
+            "lastSyncAt": "2025-12-31T10:00:00.000Z",
+            "registeredAt": "2024-04-05T00:00:00.000Z"
+        }
+    ],
+    "emis": [
+        {
+            "id": "EMI001",
+            "customerId": "CUS001",
+            "deviceId": "DEV001",
+            "financeCompany": "Bajaj Finserv",
+            "mobileAmount": 79999,
+            "totalEmiAmount": 85599,
+            "emiMonthly": 7133,
+            "emiStartDate": "2024-02-01T00:00:00.000Z",
+            "emiEndDate": "2025-01-01T00:00:00.000Z",
+            "paidEmis": 11,
+            "totalEmis": 12,
+            "nextDueDate": "2025-01-01T00:00:00.000Z",
+            "status": "active"
+        },
+        {
+            "id": "EMI002",
+            "customerId": "CUS002",
+            "deviceId": "DEV002",
+            "financeCompany": "HDFC Bank",
+            "mobileAmount": 134900,
+            "totalEmiAmount": 144543,
+            "emiMonthly": 12045,
+            "emiStartDate": "2024-03-01T00:00:00.000Z",
+            "emiEndDate": "2025-02-01T00:00:00.000Z",
+            "paidEmis": 8,
+            "totalEmis": 12,
+            "nextDueDate": "2024-11-01T00:00:00.000Z",
+            "status": "overdue"
+        },
+        {
+            "id": "EMI003",
+            "customerId": "CUS003",
+            "deviceId": "DEV003",
+            "financeCompany": "ICICI Bank",
+            "mobileAmount": 64999,
+            "totalEmiAmount": 69599,
+            "emiMonthly": 5800,
+            "emiStartDate": "2024-04-01T00:00:00.000Z",
+            "emiEndDate": "2025-03-01T00:00:00.000Z",
+            "paidEmis": 9,
+            "totalEmis": 12,
+            "nextDueDate": "2025-01-01T00:00:00.000Z",
+            "status": "active"
+        },
+        {
+            "id": "EMI004",
+            "customerId": "CUS004",
+            "deviceId": "DEV004",
+            "financeCompany": "Samsung Finance+",
+            "mobileAmount": 89999,
+            "totalEmiAmount": 96299,
+            "emiMonthly": 8025,
+            "emiStartDate": "2024-04-15T00:00:00.000Z",
+            "emiEndDate": "2025-03-15T00:00:00.000Z",
+            "paidEmis": 5,
+            "totalEmis": 12,
+            "nextDueDate": "2024-09-15T00:00:00.000Z",
+            "status": "overdue"
+        },
+        {
+            "id": "EMI005",
+            "customerId": "CUS005",
+            "deviceId": "DEV005",
+            "financeCompany": "Bajaj Finserv",
+            "mobileAmount": 74999,
+            "totalEmiAmount": 80249,
+            "emiMonthly": 6687,
+            "emiStartDate": "2024-05-01T00:00:00.000Z",
+            "emiEndDate": "2025-04-01T00:00:00.000Z",
+            "paidEmis": 3,
+            "totalEmis": 12,
+            "nextDueDate": "2024-08-01T00:00:00.000Z",
+            "status": "defaulted"
+        }
+    ],
+    "payments": [
+        {
+            "id": "PAY001",
+            "emiId": "EMI001",
+            "amount": 7133,
+            "paidAt": "2024-12-01T00:00:00.000Z",
+            "status": "paid",
+            "transactionId": "TXN123456"
+        },
+        {
+            "id": "PAY002",
+            "emiId": "EMI002",
+            "amount": 12045,
+            "paidAt": "2024-10-01T00:00:00.000Z",
+            "status": "paid",
+            "transactionId": "TXN123457"
+        },
+        {
+            "id": "PAY003",
+            "emiId": "EMI003",
+            "amount": 5800,
+            "paidAt": "2024-12-01T00:00:00.000Z",
+            "status": "paid",
+            "transactionId": "TXN123458"
+        }
+    ]
+}

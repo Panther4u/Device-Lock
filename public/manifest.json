@@ -1,0 +1,18 @@
+{
+    "name": "Device Lock App",
+    "short_name": "Device Lock",
+    "description": "Device Lock Management Application",
+    "theme_color": "#0ea5e9",
+    "background_color": "#020817",
+    "display": "standalone",
+    "orientation": "portrait",
+    "scope": "/",
+    "start_url": "/",
+    "icons": [
+        {
+            "src": "/favicon.ico",
+            "sizes": "64x64 32x32 24x24 16x16",
+            "type": "image/x-icon"
+        }
+    ]
+}
