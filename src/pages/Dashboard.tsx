@@ -70,8 +70,8 @@ const Dashboard = () => {
         subtitle="Monitor your EMI lock system performance"
       />
 
-      {/* Stats Grid - Mobile First: 1 col, then 2, then 4/6 */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-3 md:gap-4 mb-6 md:mb-8">
+      {/* Stats Grid - Mobile: 1 col, Tablet: 2 cols, Desktop: 3 cols */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
         <StatCard
           title="Total Devices"
           value={stats.totalDevices}
@@ -111,8 +111,8 @@ const Dashboard = () => {
         />
       </div>
 
-      {/* Charts Row - Stack on mobile */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-6 mb-6 md:mb-8">
+      {/* Charts - Stack on mobile */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-6">
         <CollectionChart />
         <RecentDevices />
       </div>
