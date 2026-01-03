@@ -9,8 +9,9 @@ interface LayoutProps {
 
 export const Layout = ({ children, showNav = true }: LayoutProps) => {
   const location = useLocation();
-  const hideNavRoutes: string[] = [];
-  const shouldShowNav = showNav && !hideNavRoutes.includes(location.pathname);
+  const hideNavRoutes = ['/new-registration', '/qr-generator'];
+  // Also hide on customer details pages (dynamic route)
+  const shouldShowNav = showNav && !hideNavRoutes.includes(location.pathname) && !location.pathname.startsWith('/manage/');
 
   return (
     <div className="min-h-screen bg-background pb-28 md:pb-24">
