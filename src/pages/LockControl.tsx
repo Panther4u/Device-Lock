@@ -222,26 +222,6 @@ const LockControl = () => {
                 </div>
               </div>
 
-              {/* Info */}
-              <div className="space-y-2 mb-4">
-                <div className="flex justify-between text-sm">
-                  <span className="text-muted-foreground">IMEI</span>
-                  <span className="font-mono text-foreground">{dev.imei1}</span>
-                </div>
-                <div className="flex justify-between text-sm">
-                  <span className="text-muted-foreground">Last Sync</span>
-                  <span className="text-foreground">{dev.lastSyncAt ? formatDistanceToNow(new Date(dev.lastSyncAt), { addSuffix: true }) : 'Never'}</span>
-                </div>
-                {emi && (
-                  <div className="flex justify-between text-sm">
-                    <span className="text-muted-foreground">EMI Status</span>
-                    <span className={`${emi.status === 'overdue' ? 'text-destructive' : 'text-foreground'}`}>
-                      {emi.status.charAt(0).toUpperCase() + emi.status.slice(1)}
-                    </span>
-                  </div>
-                )}
-              </div>
-
               {/* Actions */}
               <div className="flex items-center gap-2">
                 {dev.status === 'locked' ? (
