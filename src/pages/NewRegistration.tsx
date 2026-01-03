@@ -171,7 +171,7 @@ const NewRegistration = () => {
     }
 
     return (
-        <div className="animate-fade-in pb-24">
+        <div className="animate-fade-in pb-32">
             <Header
                 title="New Registration"
                 subtitle="Complete form to generate setup QR"

@@ -94,7 +94,7 @@ const QRGenerator = () => {
   );
 
   return (
-    <div className="animate-fade-in">
+    <div className="animate-fade-in pb-32">
       <Header
         title="QR Generator"
         subtitle="Generate Android Enterprise provisioning QR codes"
